@@ -35,7 +35,7 @@ password.charAt(0) == 'd'
 代表密碼第 1 個字元是 `d`。
 由於原始碼中的條件並未按照索引順序排列，因此需要將每個字元依照索引重新組合。
 為了避免手動排列出錯，我使用 Python 自動整理原始碼中的索引與字元對應關係。
-建立 `solve.py`：
+建立 `slove.py`：
 
 ```
 import re
@@ -59,7 +59,7 @@ print("Flag:", f"academy{{{result}}}")
 執行程式：
 ​
 ```
-python3 solve.py
+python3 slove.py
 ```
 ​
 程式會自動擷取 `charAt()` 的索引與字元，將字元放回正確位置，再組合成完整密碼與 flag。
